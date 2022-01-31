@@ -556,3 +556,7 @@ body {
     color: #ffffff50;
     font-weight: 300;
 }
+
+.servicios .galery-title::after {
+    right: -185px;
+}

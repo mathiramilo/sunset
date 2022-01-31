@@ -9,6 +9,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
@@ -71,7 +73,7 @@
             </div>
 
             <!-- Flecha que Indica ir hacia abajo -->
-            <a href=""><svg class="arrow-bottom" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" class="bi bi-caret-down" viewBox="0 0 16 16">
+            <a href="#galeria"><svg class="arrow-bottom" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#ffffff" class="bi bi-caret-down" viewBox="0 0 16 16">
                 <path d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z"/>
             </svg></a>
 
@@ -90,12 +92,12 @@
         </section>
 
         <section id="galeria" class="galery mt-4 mb-4">
-            <h2 class="text-center mt-2 mb-4 galery-title">Galeria</h2>
-            <p class="text-center galery-description">Les mostramos una selección de nuestras mejores fotos</p>
+            <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="text-center mt-2 mb-4 galery-title">Galeria</h2>
+            <p data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="text-center galery-description">Les mostramos una selección de nuestras mejores fotos</p>
             <div class="container mt-5">
                 <div class="row">
                     <a href="#fullscreen-image" class="galery-item col-8">
-                        <img src="./assets/img/pexels-pixabay-269583.jpg" alt="atardecer playa">
+                        <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./assets/img/pexels-pixabay-269583.jpg" alt="atardecer playa">
                         <div class="image-overlay d-flex flex-column justify-content-center align-items-center gap-3">
                             <p>22/04/2020 - 18:58 | PUNTA DEL ESTE, URUGUAY</p>
                             <h2>Atardecer en la Playa</h2>
@@ -111,7 +113,7 @@
                         </div>
                     </a>
                     <a href="#fullscreen-image2" class="galery-item col-4">
-                        <img src="./assets/img/pexels-brittany-87812.jpg" alt="atardecer natural">
+                        <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./assets/img/pexels-brittany-87812.jpg" alt="atardecer natural">
                         <div class="image-overlay d-flex flex-column justify-content-center align-items-center gap-3">
                             <p>05/10/2017 - 19:21 | CERRO LARGO, URUGUAY</p>
                             <h2>Atardecer Natural</h2>
@@ -129,7 +131,7 @@
                 </div>
                 <div class="row mt-4">
                     <a href="#fullscreen-image3" class="galery-item col-4">
-                        <img src="./assets/img/pexels-pok-rie-132037.jpg" alt="">
+                        <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./assets/img/pexels-pok-rie-132037.jpg" alt="">
                         <div class="image-overlay d-flex flex-column justify-content-center align-items-center gap-3">
                             <p>14/02/2021 - 20:01 | JOSE IGNACIO, URUGUAY</p>
                             <h2>Atardecer Muelle</h2>
@@ -145,7 +147,7 @@
                         </div>
                     </a>
                     <a href="#fullscreen-image4" class="galery-item col-8">
-                        <img src="./assets/img/pexels-pixabay-206359.jpg" alt="">
+                        <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./assets/img/pexels-pixabay-206359.jpg" alt="">
                         <div class="image-overlay d-flex flex-column justify-content-center align-items-center gap-3">
                             <p>24/03/2018 - 19:46 | LOS ANDES, ARGENTINA</p>
                             <h2>Atardecer en las Montañas</h2>
@@ -163,7 +165,7 @@
                 </div>
                 <div class="row mt-4">
                     <a href="#fullscreen-image5" class="galery-item col-8">
-                        <img src="./assets/img/pexels-nout-gons-248159.jpg" alt="">
+                        <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./assets/img/pexels-nout-gons-248159.jpg" alt="">
                         <div class="image-overlay d-flex flex-column justify-content-center align-items-center gap-3">
                             <p>29/11/2014 - 17:58 | WAIANAE, HAWAI</p>
                             <h2>Atardecer en la Calle</h2>
@@ -179,7 +181,7 @@
                         </div>
                     </a>
                     <a href="#fullscreen-image6" class="galery-item col-4">
-                        <img src="./assets/img/pexels-pixabay-157776.jpg" alt="">
+                        <img data-aos="fade-up" data-aos-anchor-placement="top-bottom" src="./assets/img/pexels-pixabay-157776.jpg" alt="">
                         <div class="image-overlay d-flex flex-column justify-content-center align-items-center gap-3">
                             <p>20/07/2012 - 19:54 | ROCHA, URUGUAY</p>
                             <h2>Mujer viendo Atardecer</h2>
@@ -202,14 +204,23 @@
                     <p>Visita Pexels</p>
                 </div>
                 <div class="btn-galery d-flex flex-column justify-content-center align-items-center">   
-                    <a target="_blank" href="#" class="btn-contactanos mb-2">Solicita tus Fotos</a>
+                    <a target="_blank" href="#contacto" class="btn-contactanos mb-2">Solicita tus Fotos</a>
                     <p>Llena un formulario</p>
                 </div>
             </div>
+        </section>
+
+        <section id="servicios" class="servicios">
+            <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="text-center mt-2 mb-4 galery-title">Servicios</h2>
         </section>
     </main>
 
     <!-- Bootstrap JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
