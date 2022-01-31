@@ -134,6 +134,24 @@ select:hover {
     }
 }
 
+@keyframes bounceSocialMedia {
+    40% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    70% {
+        transform: translateY(0);
+    }
+
+    80% {
+        transform: translateY(-10px);
+    }
+}
+
 
 
 
@@ -557,6 +575,53 @@ body {
     font-weight: 300;
 }
 
+.follow-ig {
+    margin-top: 10rem;
+    animation: bounceSocialMedia 2s infinite;
+}
+
+.follow-ig:hover {
+    animation: none;
+}
+
+.follow-ig h3 {
+    text-transform: uppercase;
+    color: #ffffffef;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.ig {
+    cursor: pointer;
+}
+
+.ig:hover {
+    color: #ffffffef;
+}
+
+.ig-icon {
+    color: #ffffffef;
+    transition: all 0.3s;
+}
+
+.ig-icon:hover {
+    color: #ffffffef;
+}
+
+.ig-name {
+    color: #ffffffef;
+    font-size: 1.4rem;
+    transition: all 0.3s;
+}
+
+.ig-name:hover {
+    color: #ffffffef;
+}
+
 .servicios .galery-title::after {
     right: -185px;
+}
+
+.servicios {
+    margin-top: 10rem;
 }
