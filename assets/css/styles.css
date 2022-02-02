@@ -76,6 +76,7 @@ img {
 /* Font for placeholders */
 *::placeholder {
     font-family: var(--montserrat);
+    color: #ffffff3a;
 }
 
 /* Setting the font for Textareas */
@@ -95,8 +96,12 @@ input[type=submit] {
     appearance: none;
 }
 
+/* Font & Reset Select */
 select {
     font-family: var(--montserrat);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 /* Cursor pointer for Submit buttons and selects */
@@ -182,7 +187,7 @@ body {
 
 /* --- HEADER --- */
 .header {
-    background-color: #0000003b;
+    background-color: #00000038;
     position: sticky;
     top: 0;
     z-index: 200;
@@ -303,10 +308,6 @@ body {
     }
 
     .sm-icon {
-        display: none;
-    }
-
-    .arrow-bottom {
         display: none;
     }
 
@@ -632,15 +633,25 @@ body {
     color: #ffffffef;
 }
 
+@media (max-width: 882px) {
+    .follow-ig h3 {
+        display: none;
+    }
+}
+
 .servicios .galery-title::after {
     right: -185px;
+}
+
+#servicios-section {
+    padding-top: 15rem;
 }
 
 .servicios {
     background-color: #0000003f;
     width: 95%;
     max-width: 1200px;
-    margin: 15rem auto 2rem auto;
+    margin: 0rem auto 2rem auto;
     padding: 2rem 1rem;
     border-radius: 5px;
     position: relative;
@@ -653,6 +664,7 @@ body {
     border-radius: 3px;
     padding: 2rem 1rem 0.5rem 1rem;
     overflow: hidden;
+    max-width: 300px;
 }
 
 .servicio svg {
@@ -677,7 +689,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5rem;
-    margin-top: 2rem;
+    margin-top: 2rem auto;
 }
 
 .servicio-overlay {
@@ -714,15 +726,33 @@ body {
     background-color: #0000005b;
 }
 
+@media (max-width: 1300px) {
+    .servicios-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
 .nosotros .galery-title::after {
     right: -196px;
+}
+
+.follow-fb {
+    margin-bottom: 7rem;
+}
+
+#nosotros-section {
+    padding-top: 8rem;
 }
 
 .nosotros {
     background-color: #0000003f;
     width: 95%;
     max-width: 1000px;
-    margin: 15rem auto 2rem auto;
+    margin: 0rem auto 2rem auto;
     padding: 2rem 1rem;
     border-radius: 5px;
     position: relative;
@@ -766,4 +796,122 @@ body {
     color: #ffffffcc;
     font-size: 0.8rem;
     font-weight: 400;
+}
+
+.contacto {
+    background-color: #0000003f;
+    width: 95%;
+    max-width: 1000px;
+    margin: 15rem auto 2rem auto;
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    position: relative;
+    z-index: 0;
+}
+
+.contacto .galery-title::after {
+    right: -193px;
+}
+
+.formulario-contacto {
+    background-color: #00000057;
+    padding: 3rem 2rem;
+    border-radius: 5px;
+}
+
+.formulario-contacto h3 {
+    color: #ffffff8e;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: -1rem;
+}
+
+.formulario-contacto label {
+    text-transform: uppercase;
+    color: #ffffffd3;
+    font-size: 1.2rem;
+    font-weight: 400;
+    transition: all 0.4s;
+}
+
+.formulario-contacto input:not(input[type=submit]),
+.formulario-contacto select,
+.formulario-contacto textarea {
+    background-color: #00000059;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 1rem;
+    color: #ffffffd3;
+}
+
+.formulario-contacto option {
+    color: #ffffffd3;
+    background-color: #131313;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+}
+
+.formulario-contacto select {
+    color: #ffffffd3;
+    position: relative;
+    box-shadow: none;
+    border: 0;
+    outline: 0;
+}
+
+.formulario-contacto select::-ms-expand {
+    display: none;
+}
+
+.field:focus-within label {
+    color: var(--dark-orange);
+    font-weight: 500;
+    transform: translateX(5px);
+}
+
+.field:focus-within input,
+.field:focus-within select,
+.field:focus-within textarea {
+    outline: none;
+}
+
+.enviar-button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ffffffd3;
+    background-color: #ffffff2d;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.4s;
+}
+
+.enviar-button:hover {
+    background-color: var(--dark-orange);
+    color: #ffffffd3;
+}
+
+.enviar-button:focus {
+    background-color: var(--dark-orange);
+    color: #ffffffd3;
+    outline: none;
+}
+
+@media (max-width: 668px) {
+    .nombre-apellido,
+    .email-celular {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+
+    .nombre-apellido .field,
+    .email-celular .field {
+        width: 100% !important;
+    }
 }
