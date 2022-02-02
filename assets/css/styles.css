@@ -404,6 +404,10 @@ body {
     animation: bounce 4s infinite;
 }
 
+.arrow-bottom:hover {
+    animation: none;
+}
+
 .social-media {
     display: flex;
     position: absolute;
