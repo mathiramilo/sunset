@@ -1,5 +1,5 @@
 # Sunset-Ramilo
-Sitio Web para un grupo de fotografias de atardeceres
+Sitio Web para un grupo de fotografia de atardeceres
 ## Information
 Sitio web para los desafios de Bootstrap del curso de Desarrollo Web de Coderhouse
 * **Developed by: Mathias Ramilo**
