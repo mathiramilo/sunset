@@ -11,7 +11,6 @@ Sitio web para los desafios de Bootstrap del curso de Desarrollo Web de Coderhou
 ### Framework
 * **Bootstrap**
 ### Librerias
-* **Font Awesome**
 * **Animate CSS**
 * **AOS (Animate On Scroll)**
 ### Otros
