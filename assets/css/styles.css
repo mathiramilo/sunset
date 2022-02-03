@@ -303,11 +303,11 @@ body {
         font-size: 2rem;
     }
 
-    .social-media {
+    .banner .social-media {
         display: none;
     }
 
-    .sm-icon {
+    .banner .sm-icon {
         display: none;
     }
 
@@ -806,7 +806,7 @@ body {
     background-color: #0000003f;
     width: 95%;
     max-width: 1000px;
-    margin: 15rem auto 2rem auto;
+    margin: 15rem auto 8rem auto;
     padding: 2rem 1rem;
     border-radius: 5px;
     position: relative;
@@ -918,4 +918,52 @@ body {
     .email-celular .field {
         width: 100% !important;
     }
+}
+
+
+
+/* --- FOOTER --- */
+
+
+.footer {
+    background-color: #080808;
+    color: var(--white);
+    padding: 12rem 2rem;
+    text-align: center;
+}
+
+.footer h3 {
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.footer h6 {
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+
+.developed-by {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.github {
+    color: var(--white);
+    transition: all 0.4s;
+}
+
+.github:hover {
+    color: var(--dark-orange);
+}
+
+.instagram {
+    color: var(--white);
+    transition: all 0.4s;
+}
+
+.instagram:hover {
+    color: var(--dark-orange);
 }
