@@ -3,7 +3,7 @@ Sitio Web para un grupo de fotografia de atardeceres
 ## Información
 Sitio web para los desafios de Bootstrap del curso de Desarrollo Web de Coderhouse
 * **Desarrollado por: Mathias Ramilo**
-* **Sitio Web:** https://mathiramilo.github.io/SUNSET-Ramilo/
+* **Sitio Web:** https://mathiramilo.github.io/SUNSET/
 ## Herramientas
 ### Lenguajes
 * **HTML5**
