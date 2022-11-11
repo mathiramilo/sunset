@@ -179,7 +179,7 @@ select:hover {
 
 
 body {
-    background-image: url("../img/landing-image.jpg");
+    background-image: url("../assets/img/landing-image.jpg");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
